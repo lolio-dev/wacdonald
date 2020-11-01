@@ -1,28 +1,25 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>Wac donald</h1>
+    <sidebar />
+    <menu />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import sidebar from "./components/layouts/sidebar"
+import menu from "./components/layouts/menu"
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    sidebar,
+    // eslint-disable-next-line vue/no-unused-components
+    menu
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+@import 'style/main.css';
 </style>
