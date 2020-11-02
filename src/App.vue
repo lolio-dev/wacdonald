@@ -1,25 +1,34 @@
 <template>
   <div id="app">
-    <h1>Wac donald</h1>
-    <sidebar />
-    <menu />
+    <div class="menu">
+      <AppMenu />
+    </div>
+    <div class="sidebar">
+      <sidebar />
+    </div>
   </div>
 </template>
 
 <script>
 import sidebar from "./components/layouts/sidebar"
-import menu from "./components/layouts/menu"
+import AppMenu from "@/components/layouts/AppMenu";
 
 export default {
   name: 'App',
   components: {
     sidebar,
-    // eslint-disable-next-line vue/no-unused-components
-    menu
+    AppMenu
+  },
+  data(){
+    return{
+
+    }
   }
 }
 </script>
 
 <style>
 @import 'style/main.css';
+@import 'style/reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
 </style>

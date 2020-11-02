@@ -1,2 +1,77 @@
+/* app */
+#app{
+    display: flex;
+    font-family: 'Montserrat', serif;
+}
 
+.sidebar{
+    padding: 20px;
+    background: #f7f7f7;
+    width: 40%;
+    height: 100vh;
+}
 
+.menu{
+    background: white;
+    height: 100vh;
+    width: 70%;
+}
+/* app */
+
+/* menu */
+
+/* menu */
+
+/* sidebar */
+.header{
+    text-align: right;
+    margin: 10px;
+}
+
+.my-order h2{
+    font-size: 1em;
+}
+
+.my-order h3{
+    font-size: 0.8em;
+    font-weight: 400;
+}
+
+.validation{
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 15px;
+}
+
+.totalPrice{
+    font-weight: 600;
+}
+
+.btnDone{
+    height: 40px;
+    width: 100px;
+    margin-top: 5px;
+    border: none;
+    background: #ffc856;
+    border-radius: 7px;
+}
+
+.separateur{
+    text-align: center;
+    display: block;
+    height: 1px;
+    width: 100px;
+    background: #a5a5a5;
+    margin-bottom: 5px;
+}
+
+.pays{
+    height: 30px;
+    width: auto;
+}
+/* sidebar */
+
+/* menu */
+
+/* menu */
