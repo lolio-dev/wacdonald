@@ -1,6 +1,10 @@
 <template>
   <div id="app">
+
     <div class="menu">
+      <header>
+        <img src="@/assets/logo.png" alt="logo" class="logo">
+      </header>
       <AppMenu />
     </div>
     <div class="sidebar">

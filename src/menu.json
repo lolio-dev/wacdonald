@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "name": "burger",
+    "promo": "20% off",
+    "price": 4.5,
+    "icon": "https://image.flaticon.com/icons/svg/878/878052.svg",
+    "cat": "menu",
+    "quantity": 0
+  },
+  {
+    "id": 2,
+    "name": "Hot Dog",
+    "promo": null,
+    "price": 5,
+    "icon": "https://image.flaticon.com/icons/svg/3126/3126350.svg",
+    "cat": "menu",
+    "quantity": 0
+  },
+  {
+    "id": 3,
+    "name": "Maxi Best",
+    "promo": null,
+    "price": 4.2,
+    "icon": "https://image.flaticon.com/icons/svg/2922/2922037.svg",
+    "cat": "menu",
+    "quantity": 0
+  },
+  {
+    "id": 4,
+    "name": "Beverages",
+    "promo": null,
+    "price": 2,
+    "icon": "https://image.flaticon.com/icons/svg/734/734748.svg",
+    "cat": "menu",
+    "quantity": 0
+  },
+  {
+    "id": 5,
+    "name": "Chicken",
+    "promo": null,
+    "price": 4,
+    "icon": "https://image.flaticon.com/icons/svg/2884/2884591.svg",
+    "cat": "menu",
+    "quantity": 0
+  },
+  {
+    "id": 6,
+    "name": "Fries",
+    "promo": null,
+    "price": 4,
+    "icon": "https://image.flaticon.com/icons/svg/2912/2912292.svg",
+    "cat": "menu",
+    "quantity": 0
+  },
+  {
+    "id": 7,
+    "name": "Vegan",
+    "promo": null,
+    "price": 5,
+    "icon": "https://image.flaticon.com/icons/svg/2738/2738642.svg",
+    "cat": "product",
+    "quantity": 0
+  },
+  {
+    "id": 8,
+    "name": "Sausage",
+    "promo": null,
+    "price": 4,
+    "icon": "https://image.flaticon.com/icons/svg/1000/1000143.svg",
+    "cat": "product",
+    "quantity": 0
+  },
+  {
+    "id": 9,
+    "name": "Fish",
+    "promo": null,
+    "price": 4,
+    "icon": "https://image.flaticon.com/icons/svg/2836/2836529.svg",
+    "cat": "product",
+    "quantity": 0
+  }
+]

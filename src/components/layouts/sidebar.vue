@@ -1,15 +1,18 @@
 <template>
   <div id="sidebar">
     <div class="header">
-      <img src="@/assets/pays.png" alt="logo" class="pays"/>
+      <img src="@/assets/pays.png" alt="american-flag" class="pays"/>
     </div>
 
-    <div class="my-order">
+    <div class="my-order-title">
       <h2>My <br>Order</h2>
       <h3>Take Out</h3>
-      <div class="panier">
-        <!-- v-for card-menu -->
-      </div>
+    </div>
+
+    <div class="panier">
+      <CardProduct
+
+      />
     </div>
 
     <div class="validation">
@@ -22,8 +25,15 @@
 </template>
 
 <script>
+import cardProduct from '../card-product'
 export default {
   name: "sidebar",
+  components: {
+    cardProduct,
+  },
+  props: {
+    panier: Array
+  },
   data(){
     return{
       logoPath: "/home/elie/Documents/dev/web/wacdonald/src/assets/pays.png",

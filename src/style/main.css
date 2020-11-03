@@ -11,28 +11,84 @@
     height: 100vh;
 }
 
-.menu{
-    background: white;
-    height: 100vh;
-    width: 70%;
+
+
+.logo{
+    height: 50px;
+    width: auto;
+}
+
+#app .menu header{
+    padding: 20px;
 }
 /* app */
 
 /* menu */
+.Hey{
+    font-weight: bold;
+}
 
+.Wats{
+    font-weight: normal;
+}
+.menu{
+     background: white;
+     height: 100vh;
+     width: 70%;
+}
+
+.MenuTitle{
+    margin: 15px;
+}
+
+.FoodItem span{
+    display: block;
+}
+
+.FoodItem img{
+    margin: 3px;
+    height: 35px;
+    width: 35px;
+}
+
+.FoodItem{
+    padding: 5px;
+    text-align: center;
+    height: 95px;
+    width: 95px;
+    background: #f8f8f8;
+    border-radius: 15px;
+    margin: 10px;
+    color: black;
+}
+
+.FoodItem:hover{
+    background: #d42925;
+    color: white;
+}
+
+.FoodContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
 /* menu */
 
 /* sidebar */
+
 .header{
     text-align: right;
     margin: 10px;
 }
 
-.my-order h2{
+.my-order-title{
+    margin-top: 45px;
+}
+
+.my-order-title h2{
     font-size: 1em;
 }
 
-.my-order h3{
+.my-order-title h3{
     font-size: 0.8em;
     font-weight: 400;
 }
@@ -71,7 +127,3 @@
     width: auto;
 }
 /* sidebar */
-
-/* menu */
-
-/* menu */
