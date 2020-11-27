@@ -28,12 +28,18 @@ export default {
   data(){
     return {
       JsonMenu,
+      Panier: []
     }
   },
   methods: {
     add(item){
-      console.log(item.name)
-      console.log(item.price)
+      this.Panier.push({
+        name: item.name,
+        icon: item.icon,
+        price: item.price
+      })
+      // console.log(this.Panier)
+      this.$emit('updatePanier', this.Panier)
     }
   }
 }

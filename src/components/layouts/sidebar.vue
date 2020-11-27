@@ -7,11 +7,15 @@
     <div class="my-order-title">
       <h2>My <br>Order</h2>
       <h3>Take Out</h3>
+      <button @click="test">coucou</button>
     </div>
 
     <div class="panier">
-      <CardProduct
-
+      <card-product
+        v-for="(item, index) in panier"
+        :key="index"
+        :name="item[index].name"
+        :price="item.price"
       />
     </div>
 
@@ -26,20 +30,25 @@
 
 <script>
 import cardProduct from '../card-product'
+
 export default {
   name: "sidebar",
   components: {
-    cardProduct,
+    cardProduct
   },
   props: {
     panier: Array
   },
   data(){
     return{
-      logoPath: "/home/elie/Documents/dev/web/wacdonald/src/assets/pays.png",
       totalPrice: 18,
     }
-  }
+  },
+  methods: {
+    test: function () {
+      console.log(this.panier)
+    }
+  },
 }
 </script>
 
