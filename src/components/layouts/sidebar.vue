@@ -7,7 +7,6 @@
     <div class="my-order-title">
       <h2>My <br>Order</h2>
       <h3>Take Out</h3>
-      <button @click="test">coucou</button>
     </div>
 
     <div class="panier">
@@ -15,7 +14,7 @@
         v-for="(item, index) in panier"
         :key="index"
         :name="item[index].name"
-        :price="item.price"
+        :price="item[index].price"
       />
     </div>
 
@@ -34,19 +33,14 @@ import cardProduct from '../card-product'
 export default {
   name: "sidebar",
   components: {
-    cardProduct
+    cardProduct,
   },
   props: {
-    panier: Array
+    panier: [],
   },
   data(){
     return{
       totalPrice: 18,
-    }
-  },
-  methods: {
-    test: function () {
-      console.log(this.panier)
     }
   },
 }

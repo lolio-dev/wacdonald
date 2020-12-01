@@ -8,7 +8,7 @@
     <div class="FoodContainer">
       <div
           class="FoodItem"
-          v-for="menu in JsonMenu"
+          v-for="menu in menu"
           :key="menu"
           @click="add(menu)"
       >
@@ -21,25 +21,21 @@
 </template>
 
 <script>
-import JsonMenu from '@/menu.json'
+import menu from '@/menu.json'
 
 export default {
   name: "AppMenu",
   data(){
     return {
-      JsonMenu,
-      Panier: []
+      menu,
+      panier: []
     }
   },
   methods: {
     add(item){
-      this.Panier.push({
-        name: item.name,
-        icon: item.icon,
-        price: item.price
-      })
+      this.panier.push(item)
       // console.log(this.Panier)
-      this.$emit('updatePanier', this.Panier)
+      this.$emit('updatePanier', this.panier)
     }
   }
 }

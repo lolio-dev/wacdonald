@@ -5,10 +5,10 @@
       <header>
         <img src="@/assets/logo.png" alt="logo" class="logo">
       </header>
-      <AppMenu v-on:updatePanier="updatePaner($event)"/>
+      <AppMenu v-on:updatePanier="updatePanier($event)"/>
     </div>
     <div class="sidebar">
-      <sidebar :panier="Panier"/>
+      <sidebar :panier="panier"/>
     </div>
   </div>
 </template>
@@ -25,13 +25,12 @@ export default {
   },
   data(){
     return{
-      Panier: {},
+      panier: [],
     }
   },
   methods: {
-    updatePaner: function (panier) {
-      console.log(panier[0].name)
-      console.log(panier)
+    updatePanier: function (item) {
+      this.panier.push(item)
     }
   }
 }
