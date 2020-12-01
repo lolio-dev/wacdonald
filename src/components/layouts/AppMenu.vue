@@ -28,14 +28,11 @@ export default {
   data(){
     return {
       menu,
-      panier: []
     }
   },
   methods: {
     add(item){
-      this.panier.push(item)
-      // console.log(this.Panier)
-      this.$emit('updatePanier', this.panier)
+      this.$emit('updatePanier', item)
     }
   }
 }

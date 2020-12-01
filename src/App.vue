@@ -5,10 +5,13 @@
       <header>
         <img src="@/assets/logo.png" alt="logo" class="logo">
       </header>
-      <AppMenu v-on:updatePanier="updatePanier($event)"/>
+      <AppMenu v-on:updatePanier="addItem($event)"/>
     </div>
     <div class="sidebar">
-      <sidebar :panier="panier"/>
+      <sidebar
+          :panier="panier"
+          :total-price="totalPrice"
+      />
     </div>
   </div>
 </template>
@@ -26,10 +29,12 @@ export default {
   data(){
     return{
       panier: [],
+      totalPrice: 0,
     }
   },
   methods: {
-    updatePanier: function (item) {
+    addItem: function (item) {
+      this.totalPrice += item.price
       this.panier.push(item)
     }
   }

@@ -1,7 +1,14 @@
 <template>
-  <div>
-    <span>{{ name }}</span><br>
-    <span>{{ price }}€</span>
+  <div id="card-product">
+    <img :src="item.icon" alt=""><br>
+    <span class="name">{{ item.name }}</span><br>
+    <span class="price">{{ item.price }}€</span>
+
+    <div class="quantity">
+      <button @click="quantity--">-</button>
+      <span class="quantity">{{ quantity }}</span>
+      <button @click="quantity++">+</button>
+    </div>
   </div>
 </template>
 
@@ -9,12 +16,14 @@
 export default {
   name: "card-product",
   props: {
-    name: String,
-    price: Number,
+    item: Object,
+  },
+  data(){
+    return {
+      quantity: 0,
+    }
   }
 }
 </script>
 
-<style scoped>
-
-</style>
+<style src="../style/card-product.css" />

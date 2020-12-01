@@ -13,8 +13,7 @@
       <card-product
         v-for="(item, index) in panier"
         :key="index"
-        :name="item[index].name"
-        :price="item[index].price"
+        :item="item"
       />
     </div>
 
@@ -37,11 +36,7 @@ export default {
   },
   props: {
     panier: [],
-  },
-  data(){
-    return{
-      totalPrice: 18,
-    }
+    totalPrice: Number
   },
 }
 </script>

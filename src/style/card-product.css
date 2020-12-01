@@ -1,0 +1,36 @@
+img{
+    height: 30px;
+    width: 30px;
+}
+
+button{
+    width: 30px;
+    height: 20px;
+    border: none;
+    background: #ffc856;
+    text-align: center;
+    font-size: 0.8em;
+    border-radius: 5px;
+}
+
+#card-product{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.name{
+    font-size: 0.9em;
+}
+
+.price{
+    font-size: 0.8em;
+}
+
+.quantity{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.quantity span{
+    font-size: 0.9em;
+}
